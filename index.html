@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNS下書き帳 - サポート</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+    header h1 { font-size: 1.8rem; font-weight: 700; }
+    header p  { margin-top: .4rem; color: #6e6e73; font-size: .95rem; }
+
+    main {
+      max-width: 720px;
+      margin: 2rem auto;
+      padding: 0 1.25rem 4rem;
+    }
+
+    section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.75rem 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      padding-bottom: .5rem;
+      border-bottom: 2px solid #f0f0f0;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-top: 1.25rem;
+      margin-bottom: .5rem;
+    }
+
+    p { margin-bottom: .75rem; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      padding-left: 1.3rem;
+      margin-bottom: .75rem;
+    }
+    ul li { margin-bottom: .4rem; }
+
+    .badge {
+      display: inline-block;
+      background: #f0f0f0;
+      color: #3a3a3c;
+      font-size: .8rem;
+      padding: .15rem .55rem;
+      border-radius: 20px;
+      margin-right: .3rem;
+    }
+
+    .note {
+      background: #f5f5f7;
+      border-left: 3px solid #c7c7cc;
+      border-radius: 0 8px 8px 0;
+      padding: .75rem 1rem;
+      font-size: .9rem;
+      color: #6e6e73;
+    }
+
+    .faq dt {
+      font-weight: 700;
+      margin-top: 1rem;
+    }
+    .faq dt:first-child { margin-top: 0; }
+    .faq dd {
+      margin-top: .3rem;
+      color: #3a3a3c;
+    }
+
+    a { color: #0066cc; }
+
+    footer {
+      text-align: center;
+      color: #aeaeb2;
+      font-size: .82rem;
+      padding-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SNS下書き帳</h1>
+  <p>サポートページ</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>アプリについて</h2>
+    <p>
+      <strong>SNS下書き帳</strong>は、投稿ネタ・下書き・投稿予定をまとめて整理するためのiOSアプリです。
+      複数のSNSアカウントごとに、メモ・ハッシュタグ・投稿方針を分けて管理できます。
+    </p>
+    <p>
+      <span class="badge">ローカル保存</span>
+      <span class="badge">SNSログインなし</span>
+      <span class="badge">自動投稿なし</span>
+    </p>
+    <div class="note">
+      本アプリはX（旧Twitter）・Instagram・Threads・TikTok・YouTube・Blueskyなどの
+      公式サービスとは一切関係ありません。各SNS事業者が提供するサービスではありません。
+    </div>
+  </section>
+
+  <section>
+    <h2>主な機能</h2>
+    <ul>
+      <li>投稿ネタ・下書きの管理</li>
+      <li>ステータス管理（ネタ・下書き・投稿予定・投稿済みなど）</li>
+      <li>投稿予定のリマインド通知</li>
+      <li>投稿本文のコピー</li>
+      <li>iOSの共有機能を使って、対応するSNSアプリへ本文を渡す</li>
+      <li>共有した投稿を「投稿済み」に変更</li>
+      <li>初回起動時の使い方ガイド（設定画面からいつでも再表示可能）</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>重要な説明</h2>
+    <ul>
+      <li>SNSアカウントへのログインは行いません</li>
+      <li>SNS APIとの連携は行いません</li>
+      <li>自動投稿は行いません</li>
+      <li>予約投稿（アプリが時間通りに自動送信する機能）は行いません</li>
+    </ul>
+    <p>
+      実際の投稿は、iOSの共有機能で渡された本文をもとに、各SNSアプリ側でユーザー自身が
+      内容を確認したうえで行っていただく形になります。
+    </p>
+  </section>
+
+  <section>
+    <h2>よくある質問</h2>
+    <dl class="faq">
+      <dt>Xに直接投稿できますか？</dt>
+      <dd>いいえ。iOSの共有機能でXなどの対応アプリへ本文を渡し、投稿は各SNSアプリ側で行っていただきます。</dd>
+
+      <dt>投稿は自動で行われますか？</dt>
+      <dd>いいえ。自動投稿は行いません。</dd>
+
+      <dt>データはどこに保存されますか？</dt>
+      <dd>すべて端末内に保存されます。開発者のサーバーには送信されません。</dd>
+
+      <dt>通知は何に使いますか？</dt>
+      <dd>投稿予定のリマインドに使用します。</dd>
+
+      <dt>共有すると何が渡されますか？</dt>
+      <dd>投稿本文のみです。メモや内部管理情報は共有先に渡されません。</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>お問い合わせ</h2>
+    <p>不具合のご報告やご要望は、アプリのApp Storeページに記載のサポート窓口までご連絡ください。</p>
+  </section>
+
+  <section>
+    <h2>プライバシーポリシー</h2>
+    <p>個人情報の取り扱いについては、<a href="privacy.html">プライバシーポリシー</a>をご確認ください。</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 SNS下書き帳</p>
+</footer>
+
+</body>
+</html>
